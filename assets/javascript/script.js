@@ -1,13 +1,6 @@
-var message = prompt('veuillez saisir une phrase');
-console.log(message);
-var reponse ="";
-if(message < 0){
-  reponse = 'nombre négatif';
+var resultat ="<ul>";
+for (var i=0; i <=100; i++) {
+  resultat=resultat+"<li>"+i+"</li>";
 }
-else if (message > 0){
-  reponse = 'Nombre positif'
-}
-else {
-  reponse = 'Null'
-}
-alert(reponse);
+resultat=resultat+"</ul>";
+document.write(resultat);
